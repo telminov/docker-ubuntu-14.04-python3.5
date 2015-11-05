@@ -20,4 +20,7 @@ WORKDIR /tmp/Python-3.5.0
 RUN ./configure
 RUN make
 RUN make install
-RUN rm -rf /tmp/Python-3.5.0*
+
+WORKDIR /
+RUN rm -rf /tmp/Python-3.5.0.tar.xz /tmp/Python-3.5.0
+
