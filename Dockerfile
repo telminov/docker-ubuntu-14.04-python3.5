@@ -24,3 +24,4 @@ RUN make install
 WORKDIR /
 RUN rm -rf /tmp/Python-3.5.0.tar.xz /tmp/Python-3.5.0
 
+RUN pip3 install ipython
